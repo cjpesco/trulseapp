@@ -65,11 +65,11 @@ class _TrulsePageState extends State<TrulsePage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     '${questionBank[_currentQuestionIndex].questionText}',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.white,
-                    ),
+                    // style: TextStyle(
+                    //   fontSize: 16.0,
+                    //   fontWeight: FontWeight.normal,
+                    //   color: Colors.white,
+                    // ),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -149,11 +149,11 @@ class _TrulsePageState extends State<TrulsePage> {
     }
   }
 
-  void _updateQuestion() {
-    setState(() {
-      _currentQuestionIndex = (_currentQuestionIndex + 1) % questionBank.length;
-    });
-  }
+  // void _updateQuestion() {
+  //   setState(() {
+  //     _currentQuestionIndex = (_currentQuestionIndex + 1) % questionBank.length;
+  //   });
+  // }
 
   void _nextQuestion() {
     setState(() {
